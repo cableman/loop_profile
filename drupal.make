@@ -12,6 +12,7 @@ projects[drupal][patch][] = "https://drupal.org/files/drupal-menu_navigation_lin
 projects[drupal][patch][] = "https://drupal.org/files/issues/translate_role_names-2205581-1.patch"
 ; Drupal has issues clearing caches when node_modules/ or bower_components/ directories are present.
 projects[drupal][patch][] = "https://www.drupal.org/files/issues/optimize_scan-2329453-89-d7-do-not-test.patch"
+projects[drupal][patch][] = "https://raw.githubusercontent.com/os2loop/profile/develop/patches/rebuild_local_js_alter.patch"
 
 ; Install profile.
 projects[loopdk][type] = "profile"
