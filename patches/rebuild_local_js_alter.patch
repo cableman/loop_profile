@@ -1,0 +1,14 @@
+diff --git a/includes/locale.inc b/includes/locale.inc
+index 11f1413eec..5c4fb20217 100644
+--- a/includes/locale.inc
++++ b/includes/locale.inc
+@@ -2058,6 +2058,9 @@ function _locale_rebuild_js($langcode = NULL) {
+     $translations[$data->context][$data->source] = $data->translation;
+   }
+ 
++  // Give other modules the option to add more translations.
++  drupal_alter('local_rebuild_js', $translations, $language->language);
++
+   // Construct the JavaScript file, if there are translations.
+   $data_hash = NULL;
+   $data = $status = '';
